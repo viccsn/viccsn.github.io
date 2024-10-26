@@ -20,7 +20,7 @@ main {
     padding-bottom: 10px;
     opacity: 0;
     transform: translateX(-50px);
-    animation: slideInFromLeft 1s forwards;     
+    animation: slideInFromLeft 1s forwards;
 }
 
 .content {
@@ -34,7 +34,7 @@ main {
     border-radius: 5px;
     opacity: 0;
     transform: translateX(-50px);
-    animation: slideInFromLeft 1s forwards; 
+    animation: slideInFromLeft 1s forwards;
 }
 
 .card {
@@ -48,11 +48,26 @@ main {
 .product-description {
     max-width: 500px;
     margin: 0 20px;
-    text-align: center; 
+    text-align: center;
     opacity: 0;
     transform: translateX(-50px);
-    animation: slideInFromLeft 1s forwards; 
+    animation: slideInFromLeft 1s forwards;
 }
+
+.preview-button {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: black;
+    text-align: center;
+}
+
+.preview-button a {
+    color: white;
+    text-decoration: none;
+}
+
 
 .social-media {
     position: relative;
@@ -75,22 +90,89 @@ main {
     height: auto;
 }
 
-@media (max-width: 600px) {
-    main {
-        justify-content: flex-start;
-    }
+.icons-hover:hover img {
+    opacity: 0.5;
+}
 
+@media (min-width: 481px) and (max-width: 1024px) {
     .content {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
-        padding-bottom: 20px; 
+        border: none;
     }
 
     .card {
-        margin: 0 0 20px; 
+        max-width: 100%;
+        margin: 10px auto;
     }
 
     .product-description {
-        text-align: center; 
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .about {
+        font-size: 40px;
+    }
+
+    .preview-button {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: black;
+        text-align: center;
+    }
+    
+    .preview-button a {
+        color: white;
+        text-decoration: none;
     }
 }
+
+@media (max-width: 480px) {
+    .about {
+        font-size: 40px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .product-description {
+        max-width: 100%;
+        margin: 0 10px;
+        padding: 15px;
+    }
+
+    .preview-button {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: black;
+        text-align: center;
+    }
+    
+    .preview-button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .social-media {
+        position: fixed;
+    }
+
+    .social-media img {
+        max-width: 20px;
+    }
+
+}
+

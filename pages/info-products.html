@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/products.css">
     <link rel="stylesheet" href="../styles/info-products.css">
     <script src="../scripts/info-products.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
     <title>Product Info</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
 
     <main>
         <div id="mida" class="product-info" style="display: none;">
-            <h1 class="about">about mida</h1>
+            <h1 class="about" id="about-text">mida</h1>
             <div class="content">
                 <div class="card">
                     <a href="#" class="image">
@@ -63,12 +64,20 @@
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aperiam fuga commodi placeat necessitatibus. Facere fuga quaerat at, obcaecati, praesentium iste velit vitae iusto itaque, cum maiores esse nesciunt eius.</p>
                     <br>
-                    <a href="">preview</a>
-                        
+                    <div class="preview-button">
+                        <a href="">Preview</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <div class="side-menu" id="side-menu">
+        <div class="menu-item"><a href="./pages/products.html">products</a></div>
+        <div class="menu-item"><a href="">subscribe</a></div>
+        <div class="menu-item"><a href="">bundles</a></div>
+        <div class="menu-item"><a href="">more</a></div>
+    </div>
 
     <footer>
         <div class="social-media">
