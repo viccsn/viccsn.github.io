@@ -14,6 +14,7 @@ header {
     padding: 5px 15px; 
     height: 40px; 
     border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
 }
 
 .icon {
@@ -76,11 +77,12 @@ a:hover {
 .welcome h1 {
     font-weight: 100;
     font-size: 80px;
+    margin: 0;
 }
 
 .welcome, .latest-release {
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInFromLeft 1s forwards;
@@ -116,7 +118,7 @@ main {
     overflow: hidden;
     transition: transform 0.2s ease;
     max-width: 350px;
-    margin: 25px auto;
+    margin: 30px auto;
 }
 
 .card:hover {
@@ -207,13 +209,13 @@ main {
 
 .latest-release {
     display: flex;
-    flex-direction: column; /* Mudando para coluna para que o padding funcione */
-    align-items: center; /* Centralizando o conteúdo */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .latest-release .text-latest {
-    padding-bottom: 10px; /* Aplicando padding */
-    font-weight: bold; /* Opcional: deixar o texto em negrito */
+    padding-bottom: 10px; 
+    font-weight: bold; 
 }
 
 @media (max-width: 768px) {
