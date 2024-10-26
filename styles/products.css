@@ -142,6 +142,9 @@ main {
     overflow: hidden;
     transition: transform 0.2s ease;
     max-width: 350px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInFromLeft 1s forwards;
 }
 
 .card:hover {
