@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Quicksand;
 }
 
 header {
@@ -25,7 +25,6 @@ header {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 1001;
 }
 
 .line {
@@ -73,23 +72,6 @@ a:hover {
     color: rgb(255, 255, 93);
 }
 
-.welcome h1 {
-    font-weight: 100;
-    font-size: 80px;
-}
-
-.welcome, .latest-release {
-    text-align: center;
-    margin: 20px 0;
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: slideInFromLeft 1s forwards;
-}
-
-.latest-release {
-    margin: 30px 0;
-}
-
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
@@ -101,11 +83,54 @@ a:hover {
     }
 }
 
+.title-products {
+    font-weight: 100;
+    font-size: 60px;
+    margin: 15px auto;
+    text-align: center;
+    animation: slideInFromLeft 1s forwards;
+}
+
 main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
-    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 10px;
+    }
+    .card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-products {
+        font-size: 50px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    main {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .card {
+        max-width: 100%;
+        margin: 10px auto;
+    }
 }
 
 .card {
@@ -116,7 +141,8 @@ main {
     overflow: hidden;
     transition: transform 0.2s ease;
     max-width: 350px;
-    margin: 25px auto;
+    margin: 25px;
+    animation: slideInFromLeft 1s forwards;
 }
 
 .card:hover {
@@ -149,7 +175,6 @@ main {
     align-items: center;
     width: 100%;
     padding-bottom: 5px;
-    padding-left: 5px;
 }
 
 .purchase-product {
@@ -172,79 +197,4 @@ main {
 
 .button-purchase a:hover {
     color: rgb(255, 255, 93);
-}
-
-.icon img {
-    max-width: 30px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.social-media {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    z-index: 1000;
-}
-
-.social-media img {
-    max-width: 20px;
-    height: auto;
-    transition: opacity 0.3s ease; 
-}
-
-.icons-hover:hover img {
-    opacity: 0.7; 
-}
-
-.latest-release {
-    display: flex;
-    flex-direction: column; /* Mudando para coluna para que o padding funcione */
-    align-items: center; /* Centralizando o conteúdo */
-}
-
-.latest-release .text-latest {
-    padding-bottom: 10px; /* Aplicando padding */
-    font-weight: bold; /* Opcional: deixar o texto em negrito */
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    .menu {
-        display: none;
-    }
-    main {
-        margin: 0 10px;
-    }
-    .card {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    .welcome h1 {
-        font-size: 60px;
-    }
-}
-
-@media (max-width: 480px) {
-    .welcome h1 {
-        font-size: 60px;
-    }
-    main {
-        margin: 0 20px;
-    }
-    .card {
-        max-width: 100%;
-        margin: 10px auto;
-    }
 }
