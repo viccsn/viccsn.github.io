@@ -35,15 +35,43 @@ main {
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInFromLeft 1s forwards;
+    flex-wrap: wrap;
 }
+
+/* Ajustes Imagem do card, centralizar etc  */
 
 .card {
     animation: slideInFromLeft 1s forwards;
     max-width: 350px;
+    width: 100%;
     margin: 20px;
     opacity: 0;
     transform: translateX(-50px);
+    padding: 0;
 }
+
+.image {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 100%; /* Altura do contêiner da imagem */
+    width: 100%; /* Largura do contêiner da imagem */
+    border: none;
+    padding: 0; /* Controla o espaço interno ao redor da imagem */
+}
+
+.card .image img {
+    width: auto; /* Defina 'auto' ou um valor específico como '50%' */
+    height: auto; /* Ajuste conforme necessário (ex: '100px' ou '200px') */
+    max-height: 100%; /* Limita a altura da imagem ao tamanho do contêiner */
+    max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner */
+    object-fit: contain; /* Altera para 'cover' se quiser que a imagem preencha o espaço */
+    border-radius: 5px;
+}
+
+
+
+
 
 .product-description {
     max-width: 500px;
@@ -69,7 +97,7 @@ main {
 }
 
 .social-media {
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -102,30 +130,18 @@ main {
 
     .card {
         max-width: 100%;
+        max-height: 100%;
         margin: 10px auto;
     }
 
     .product-description {
         max-width: 100%;
-        margin: 10px;
+        margin: 10px 20px;
+        font-size: 18px;
     }
 
     .about {
         font-size: 40px;
-    }
-
-    .preview-button {
-        display: inline-block;
-        border: 1px solid black;
-        padding: 5px 10px;
-        border-radius: 5px;
-        background-color: black;
-        text-align: center;
-    }
-
-    .preview-button a {
-        color: white;
-        text-decoration: none;
     }
 }
 
@@ -151,26 +167,9 @@ main {
         padding: 15px;
     }
 
-    .preview-button {
-        display: inline-block;
-        border: 1px solid black;
-        padding: 5px 10px;
-        border-radius: 5px;
-        background-color: black;
-        text-align: center;
-    }
-
-    .preview-button a {
-        color: white;
-        text-decoration: none;
-    }
-
     .social-media {
         position: fixed;
-    }
-
-    .social-media img {
-        max-width: 20px;
+        bottom: 0;
     }
 }
 
