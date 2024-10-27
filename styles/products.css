@@ -106,6 +106,7 @@ main {
     flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
     justify-content: center; /* Centraliza os cards */
     padding: 20px;
+    padding-bottom: 60px;
 }
 
 .card {
@@ -185,7 +186,7 @@ main {
 }
 
 .social-media {
-    position: relative ;
+    position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -206,7 +207,7 @@ main {
 }
 
 .icons-hover:hover img {
-    opacity: 0.5;
+    opacity: 0.5; 
 }
 
 .latest-release {
