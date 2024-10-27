@@ -228,7 +228,7 @@ main {
         display: none;
     }
     main {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         margin: 0 10px;
     }
     .card {
