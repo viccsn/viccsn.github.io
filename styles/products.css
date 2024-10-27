@@ -10,9 +10,6 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
@@ -107,7 +104,6 @@ main {
     padding: 20px;
     margin: 0 auto;
     justify-content: center;
-    flex-grow: 1;
 }
 
 .card {
@@ -180,6 +176,10 @@ main {
 }
 
 .social-media {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,8 +188,7 @@ main {
     padding: 10px;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    z-index: 1000;
 }
 
 .social-media img {
