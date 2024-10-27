@@ -4,10 +4,14 @@ body {
     min-height: 100vh;
 }
 
+html, body {
+    height: 100%;
+}
+
 main {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Mantenha como coluna para dispositivos menores */
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -27,7 +31,7 @@ main {
 .content {
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centraliza os cards dentro do content */
     align-items: center;
     max-width: 1200px;
     width: 100%;
@@ -40,19 +44,17 @@ main {
 }
 
 /* Ajustes Imagem do card, centralizar etc  */
-
 .card {
     animation: slideInFromLeft 1s forwards;
-    max-width: 350px;
-    width: 100%;
-    margin: 20px;
+    max-width: 350px; /* Largura máxima do card */
+    width: 100%; /* Largura total do card */
+    margin: 20px; /* Espaçamento entre os cards */
     opacity: 0;
     transform: translateX(-50px);
     padding: 0;
 }
 
 /* Ajustes imagem */
-
 .image {
     display: flex; 
     align-items: center; 
@@ -71,10 +73,6 @@ main {
     object-fit: contain; /* Altera para 'cover' se quiser que a imagem preencha o espaço */
     border-radius: 5px;
 }
-
-
-
-
 
 .product-description {
     max-width: 500px;
@@ -99,8 +97,9 @@ main {
     text-decoration: none;
 }
 
+/* Redes sociais no final */
 .social-media {
-    position: fixed;
+    position: relative; /* Alterar para 'relative' */
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -171,7 +170,7 @@ main {
     }
 
     .social-media {
-        position: fixed;
+        position: relative; /* Alterar para 'relative' */
         bottom: 0;
     }
 }
@@ -185,6 +184,12 @@ main {
 @media (min-width: 1025px) {
     main {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /* Alterar para linha no modo desktop */
+        justify-content: center; /* Centraliza o conteúdo no modo desktop */
+    }
+
+    .content {
+        flex-direction: row; /* Mantém os cards em linha */
+        justify-content: center; /* Centraliza os cards */
     }
 }
