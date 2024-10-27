@@ -106,7 +106,7 @@ main {
     flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
     justify-content: center; /* Centraliza os cards */
     padding: 20px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .card {
@@ -115,17 +115,18 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
     overflow: hidden;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease; 
     max-width: 350px;
-    margin: 10px; /* Espaçamento entre os cards */
+    margin: 10px; 
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInFromLeft 1s forwards;
-    padding: 0; /* Mantendo o padding do card controlado */
+    padding: 0; 
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); 
+    transition: transform 0.2s ease; 
 }
 
 /* CONTROLE DO TAMANHO DA IMAGEM ABAIXO!!!!! */
@@ -186,7 +187,7 @@ main {
 }
 
 .social-media {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -196,7 +197,6 @@ main {
     gap: 10px;
     background-color: white;
     padding: 10px;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     z-index: 1000;
 }
