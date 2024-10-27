@@ -11,6 +11,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    padding-bottom: 80px;
 }
 
 .about {
@@ -49,6 +50,8 @@ main {
     transform: translateX(-50px);
     padding: 0;
 }
+
+/* Ajustes imagem */
 
 .image {
     display: flex; 
@@ -176,5 +179,12 @@ main {
 @media (max-width: 1024px) {
     .content {
         border: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    main {
+        display: flex;
+        flex-direction: row;
     }
 }

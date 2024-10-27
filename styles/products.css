@@ -7,6 +7,10 @@
     font-family: Quicksand;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -98,12 +102,10 @@ a:hover {
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
+    display: flex; /* Usando flex para centralizar os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os cards */
     padding: 20px;
-    margin: 0 auto;
-    justify-content: center;
 }
 
 .card {
@@ -114,10 +116,10 @@ main {
     overflow: hidden;
     transition: transform 0.2s ease;
     max-width: 350px;
+    margin: 10px; /* Espaçamento entre os cards */
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInFromLeft 1s forwards;
-    margin: 0 auto;
     padding: 0; /* Mantendo o padding do card controlado */
 }
 
@@ -183,7 +185,7 @@ main {
 }
 
 .social-media {
-    position: relative;
+    position: relative ;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -218,12 +220,13 @@ main {
     font-weight: bold;
 }
 
+/* Media Queries */
 @media (max-width: 1024px) {
     main {
-        grid-template-columns: 1fr;
-        margin: 0 auto;
+        flex-direction: column; /* Em telas menores, empilha os cards */
+        align-items: center; /* Centraliza os cards */
         padding: 20px;
-        max-width: 500px;
+        max-width: 500px; /* Limita a largura máxima */
     }
 }
 
@@ -235,12 +238,12 @@ main {
         display: none;
     }
     main {
-        grid-template-columns: 1fr;
+        flex-direction: column; /* Empilha os cards */
         margin: 0 10px;
     }
     .card {
-        max-width: 300px;
-        margin: 0 auto;
+        max-width: 300px; /* Limita a largura do card */
+        margin: 10px auto; /* Centraliza o card */
     }
 }
 
@@ -251,30 +254,11 @@ main {
         text-align: center;
     }
     main {
-        grid-template-columns: 1fr;
+        flex-direction: column; /* Empilha os cards */
         margin: 0 20px;
     }
     .card {
-        max-width: 100%;
-        margin: 10px auto;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        justify-content: center;
-        max-width: 750px;
-        margin: 0 auto;
-    }
-
-    .card {
-        max-width: 100%;
-        margin: 0 auto;
-        max-height: 400px;
-        overflow: hidden;
-        padding: 10px;
+        max-width: 100%; /* Largura máxima do card */
+        margin: 10px auto; /* Centraliza o card */
     }
 }
