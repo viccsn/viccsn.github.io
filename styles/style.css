@@ -79,6 +79,13 @@ a:hover {
     color: rgb(255, 255, 93);
 }
 
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .welcome h1 {
     font-weight: 100;
     font-size: 80px;
@@ -87,7 +94,7 @@ a:hover {
 
 .welcome, .latest-release {
     text-align: center;
-    margin: 30px 0;
+    margin: 10px 0;
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInFromLeft 1s forwards;
@@ -130,15 +137,19 @@ main {
     transform: translateY(-5px);
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    display: block;
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px; /* Controle o padding entre a imagem e o card */
+    width: 100%; /* Largura do contêiner da imagem */
 }
 
-.image {
-    margin-bottom: 5px;
-    border-bottom: 1px solid #ddd;
+.image img {
+    max-width: 500px;
+    height: 350px; /* A imagem irá ajustar sua altura conforme a largura */
+    object-fit: contain; /* Mantém a proporção da imagem e a centraliza */
+    border-radius: 5px; /* Bordas arredondadas na imagem */
 }
 
 .product {
@@ -188,7 +199,7 @@ main {
 }
 
 .social-media {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -223,6 +234,16 @@ main {
     font-weight: bold; 
 }
 
+@media (max-width: 1024px){
+    .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main {
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -234,12 +255,18 @@ main {
         margin: 0 10px;
     }
     .card {
-        max-width: 300px;
+        max-width: 350px;
         margin: 0 auto;
     }
     .welcome h1 {
         font-size: 60px;
     }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -253,4 +280,10 @@ main {
         max-width: 100%;
         margin: 10px auto;
     }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
