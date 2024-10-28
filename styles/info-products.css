@@ -54,20 +54,18 @@ main {
 }
 
 .image {
-    display: flex; 
-    align-items: center; 
+    display: flex;
     justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 0;
+    align-items: center;
+    padding: 0px; /* Controle o padding entre a imagem e o card */
+    width: 100%; /* Largura do contêiner da imagem */
 }
 
-.card .image img {
-    width: auto;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 5px;
+.image img {
+    max-width: 500px;
+    height: 350px; /* A imagem irá ajustar sua altura conforme a largura */
+    object-fit: contain; /* Mantém a proporção da imagem e a centraliza */
+    border-radius: 5px; /* Bordas arredondadas na imagem */
 }
 
 .product-description {
