@@ -277,7 +277,7 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 100%;
+        max-width: 350px;
         margin: 10px auto;
     }
 
