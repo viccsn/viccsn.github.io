@@ -106,7 +106,7 @@ main {
     flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
     justify-content: center; /* Centraliza os cards */
     padding: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -228,6 +228,7 @@ main {
         align-items: center; /* Centraliza os cards */
         padding: 20px;
         max-width: 500px; /* Limita a largura máxima */
+        margin: 0 auto;
     }
 }
 
@@ -240,7 +241,7 @@ main {
     }
     main {
         flex-direction: column; /* Empilha os cards */
-        margin: 0 10px;
+        margin: 0 auto;
     }
     .card {
         max-width: 300px; /* Limita a largura do card */

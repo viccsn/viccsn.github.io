@@ -11,7 +11,7 @@ html, body {
 main {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Mantenha como coluna para dispositivos menores */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -29,9 +29,8 @@ main {
 }
 
 .content {
-    margin-bottom: 50px;
     display: flex;
-    justify-content: center; /* Centraliza os cards dentro do content */
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     width: 100%;
@@ -41,36 +40,33 @@ main {
     transform: translateX(-50px);
     animation: slideInFromLeft 1s forwards;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
-/* Ajustes Imagem do card, centralizar etc  */
 .card {
     animation: slideInFromLeft 1s forwards;
-    max-width: 350px; /* Largura máxima do card */
-    width: 100%; /* Largura total do card */
-    margin: 20px; /* Espaçamento entre os cards */
+    max-width: 350px;
+    width: 100%;
+    margin: 20px;
     opacity: 0;
     transform: translateX(-50px);
     padding: 0;
 }
 
-/* Ajustes imagem */
 .image {
     display: flex; 
     align-items: center; 
     justify-content: center;
-    height: 100%; /* Altura do contêiner da imagem */
-    width: 100%; /* Largura do contêiner da imagem */
-    border: none;
-    padding: 0; /* Controla o espaço interno ao redor da imagem */
+    width: 100%;
+    height: auto;
+    padding: 0;
 }
 
 .card .image img {
-    width: auto; /* Defina 'auto' ou um valor específico como '50%' */
-    height: auto; /* Ajuste conforme necessário (ex: '100px' ou '200px') */
-    max-height: 100%; /* Limita a altura da imagem ao tamanho do contêiner */
-    max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner */
-    object-fit: contain; /* Altera para 'cover' se quiser que a imagem preencha o espaço */
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
     border-radius: 5px;
 }
 
@@ -99,7 +95,7 @@ main {
 
 /* Redes sociais no final */
 .social-media {
-    position: relative; /* Alterar para 'relative' */
+    position: relative;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -123,8 +119,10 @@ main {
     opacity: 0.5;
 }
 
+/* Responsividade para desktop do celular */
 @media (min-width: 481px) and (max-width: 1024px) {
     .content {
+        display: flex;
         flex-direction: column;
         align-items: center;
         border: none;
@@ -132,7 +130,6 @@ main {
 
     .card {
         max-width: 100%;
-        max-height: 100%;
         margin: 10px auto;
     }
 
@@ -170,26 +167,22 @@ main {
     }
 
     .social-media {
-        position: relative; /* Alterar para 'relative' */
+        position: relative;
         bottom: 0;
     }
 }
 
-@media (max-width: 1024px) {
-    .content {
-        border: none;
-    }
-}
-
+/* Responsividade para desktop */
 @media (min-width: 1025px) {
     main {
         display: flex;
-        flex-direction: row; /* Alterar para linha no modo desktop */
-        justify-content: center; /* Centraliza o conteúdo no modo desktop */
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .content {
-        flex-direction: row; /* Mantém os cards em linha */
-        justify-content: center; /* Centraliza os cards */
+        flex-direction: row;
+        justify-content: center;
     }
 }
