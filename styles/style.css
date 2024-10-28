@@ -147,7 +147,7 @@ main {
 
 .image img {
     max-width: 500px;
-    height: 350px; /* A imagem irá ajustar sua altura conforme a largura */
+    height: 250px; /* A imagem irá ajustar sua altura conforme a largura */
     object-fit: contain; /* Mantém a proporção da imagem e a centraliza */
     border-radius: 5px; /* Bordas arredondadas na imagem */
 }
@@ -242,6 +242,7 @@ main {
     main {
         margin: 0 auto;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -255,7 +256,7 @@ main {
         margin: 0 10px;
     }
     .card {
-        max-width: 350px;
+        max-width: 300px;
         margin: 0 auto;
     }
     .welcome h1 {
@@ -274,10 +275,11 @@ main {
         font-size: 60px;
     }
     main {
+        flex-direction: column;
         margin: 0 20px;
     }
     .card {
-        max-width: 350px;
+        max-width: 100%;
         margin: 10px auto;
     }
 
