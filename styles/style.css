@@ -128,11 +128,14 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
     overflow: hidden;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease; 
     max-width: 350px;
-    height: 300px; /* Altura fixa para os cards */
-    margin: 30px auto;
-}
+    margin: 10px; 
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInFromLeft 1s forwards;
+    padding: 0;
+}   
 
 .card:hover {
     transform: translateY(-5px);
@@ -201,7 +204,7 @@ main {
 }
 
 .social-media {
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -259,7 +262,7 @@ main {
         margin: 0 auto;
     }
     .card {
-        max-width: 90%;
+        max-width: 95%;
         margin: 30px auto;
     }
     .welcome h1 {
