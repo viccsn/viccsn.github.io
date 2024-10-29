@@ -27,7 +27,7 @@ main {
     transition: transform 0.2s ease;
     width: 350px;
     height: auto;
-    margin: 20px auto;
+    margin: 20px;
 }
 
 .about {
@@ -136,7 +136,7 @@ main {
     }
 
     .card {
-        max-width: 100%;
+        max-width: 90%;
         margin: 10px auto;
     }
 
@@ -170,7 +170,7 @@ main {
     }
 
     .card {
-        max-width: 100%;
+        max-width: 95%;
         margin: 10px auto;
     }
 
