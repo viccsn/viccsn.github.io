@@ -225,6 +225,70 @@ main {
 }
 
 /* Media Queries */
+
+@media (min-width: 768px) {
+    main {
+        margin: 0 auto;
+    }
+}
+
+/* Regra para proporção similar ao modo desktop do celular */
+@media (min-width: 480px) and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 500px; /* Limite de largura centralizado */
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 350px;
+        margin: 0 auto;
+        border: none; /* Remover borda no modo desktop do celular */
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .title-products {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        width: 100%;
+        z-index: 1000;
+    }
+}
+
+
 @media (max-width: 1024px) {
     main {
         flex-direction: column; /* Em telas menores, empilha os cards */
@@ -267,3 +331,4 @@ main {
         margin: 10px auto; /* Centraliza o card */
     }
 }
+
