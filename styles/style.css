@@ -252,10 +252,10 @@ main {
         display: none;
     }
     main {
-        margin: 0 10px;
+        margin: 0 auto;
     }
     .card {
-        max-width: 350px;
+        max-width: 300px;
         margin: 0 auto;
     }
     .welcome h1 {
