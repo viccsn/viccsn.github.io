@@ -263,8 +263,8 @@ main {
         margin: 0 auto;
     }
     .card {
-        max-width: 95%;
-        margin: 30px auto;
+        max-width: 250px;
+        margin: 10px auto;
     }
     .welcome h1 {
         font-size: 60px;
@@ -289,8 +289,8 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 95%;
-        margin: 30px auto;
+        max-width: 250px;
+        margin: 10px auto;
     }
 
     .content-wrapper {
