@@ -130,6 +130,7 @@ main {
     overflow: hidden;
     transition: transform 0.2s ease;
     max-width: 350px;
+    height: 300px; /* Altura fixa para os cards */
     margin: 30px auto;
 }
 
@@ -143,11 +144,12 @@ main {
     align-items: center;
     padding: 0px;
     width: 100%;
+    height: 200px; /* Ajuste para que a imagem ocupe a mesma altura */
 }
 
 .image img {
-    max-width: 500px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     border-radius: 5px;
 }
@@ -240,7 +242,7 @@ main {
         flex-wrap: wrap;
     }
     main {
-        margin: 0 20px;
+        margin: auto;
     }
 }
 
@@ -255,8 +257,8 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 90%; /* O card ocupará até 90% da largura */
-        margin: auto; /* Centraliza o card */
+        max-width: 90%;
+        margin: 30px auto;
     }
     .welcome h1 {
         font-size: 60px;
@@ -281,8 +283,8 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 95%; /* O card ocupará até 95% da largura */
-        margin: auto; /* Centraliza o card */
+        max-width: 95%;
+        margin: 30px auto;
     }
 
     .content-wrapper {
