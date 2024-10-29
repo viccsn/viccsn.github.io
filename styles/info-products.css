@@ -18,6 +18,10 @@ main {
     padding-bottom: 80px;
 }
 
+.card {
+    margin: 20px;
+}
+
 .about {
     font-weight: 100;
     font-size: 60px;
@@ -43,20 +47,19 @@ main {
     margin-bottom: 50px;
 }
 
-
 .image {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px; /* Controle o padding entre a imagem e o card */
-    width: 100%; /* Largura do contêiner da imagem */
+    padding: 0px;
+    width: 100%;
 }
 
 .image img {
     max-width: 500px;
-    height: 350px; /* A imagem irá ajustar sua altura conforme a largura */
-    object-fit: contain; /* Mantém a proporção da imagem e a centraliza */
-    border-radius: 5px; /* Bordas arredondadas na imagem */
+    height: 350px;
+    object-fit: contain;
+    border-radius: 5px;
 }
 
 .product-description {
@@ -82,7 +85,6 @@ main {
     text-decoration: none;
 }
 
-/* Redes sociais no final */
 .social-media {
     position: relative;
     bottom: 0;
@@ -108,16 +110,24 @@ main {
     opacity: 0.5;
 }
 
-/* Responsividade para desktop do celular */
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 20px;
+    }
+
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 500px;
         border: none;
     }
 
     .card {
+        max-width: 350px;
         margin: 10px auto;
     }
 
@@ -130,15 +140,16 @@ main {
     .about {
         font-size: 40px;
     }
-
-    main {
-        margin: 0 auto;
-    }
 }
 
 @media (max-width: 480px) {
     .about {
         font-size: 40px;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 0 auto;
     }
 
     .content {
@@ -148,6 +159,7 @@ main {
     }
 
     .card {
+        max-width: 100%;
         margin: 10px auto;
     }
 
@@ -157,28 +169,9 @@ main {
         padding: 15px;
         font-size: 15px;
     }
-
+    
     .social-media {
         position: relative;
         bottom: 0;
-    }
-
-    main {
-        margin: 0 auto;
-    }
-}
-
-/* Responsividade para desktop */
-@media (min-width: 1025px) {
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 auto;
-    }
-
-    .content {
-        flex-direction: row;
-        justify-content: center;
     }
 }

@@ -141,15 +141,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px; /* Controle o padding entre a imagem e o card */
-    width: 100%; /* Largura do contêiner da imagem */
+    padding: 0px;
+    width: 100%;
 }
 
 .image img {
     max-width: 500px;
-    height: 250px; /* A imagem irá ajustar sua altura conforme a largura */
-    object-fit: contain; /* Mantém a proporção da imagem e a centraliza */
-    border-radius: 5px; /* Bordas arredondadas na imagem */
+    height: 250px;
+    object-fit: contain;
+    border-radius: 5px;
 }
 
 .product {
@@ -255,8 +255,8 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 300px;
-        margin: 0 auto;
+        max-width: 90%; /* O card ocupará até 90% da largura */
+        margin: auto; /* Centraliza o card */
     }
     .welcome h1 {
         font-size: 60px;
@@ -270,7 +270,6 @@ main {
     .social-media {
         position: fixed;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -282,8 +281,8 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 100%;
-        margin: 10px auto;
+        max-width: 95%; /* O card ocupará até 95% da largura */
+        margin: auto; /* Centraliza o card */
     }
 
     .content-wrapper {
@@ -294,5 +293,4 @@ main {
     .social-media {
         position: fixed;
     }
-    
 }
