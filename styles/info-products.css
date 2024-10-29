@@ -43,15 +43,6 @@ main {
     margin-bottom: 50px;
 }
 
-.card {
-    animation: slideInFromLeft 1s forwards;
-    max-width: 350px;
-    width: 100%;
-    margin: 20px;
-    opacity: 0;
-    transform: translateX(-50px);
-    padding: 0;
-}
 
 .image {
     display: flex;
@@ -127,14 +118,13 @@ main {
     }
 
     .card {
-        max-width: 100%;
         margin: 10px auto;
     }
 
     .product-description {
         max-width: 100%;
         margin: 10px 20px;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .about {
@@ -158,7 +148,6 @@ main {
     }
 
     .card {
-        max-width: 100%;
         margin: 10px auto;
     }
 
@@ -166,6 +155,7 @@ main {
         max-width: 100%;
         margin: 0 10px;
         padding: 15px;
+        font-size: 15px;
     }
 
     .social-media {
