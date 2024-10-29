@@ -142,8 +142,9 @@ main {
 }
 
 .image img {
-    max-width: 500px;
-    height: 350px; /* A imagem irá ajustar sua altura conforme a largura */
+    min-width: 500px;
+    max-width: auto;
+    height: 250px; /* A imagem irá ajustar sua altura conforme a largura */
     object-fit: contain; /* Mantém a proporção da imagem e a centraliza */
     border-radius: 5px; /* Bordas arredondadas na imagem */
 }
@@ -263,6 +264,7 @@ main {
     }
     .card {
         max-width: 300px; /* Largura máxima do card */
+        max-height: 250px;
         margin: 10px auto; /* Centraliza o card */
     }
 }
