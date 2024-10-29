@@ -240,7 +240,7 @@ main {
         flex-wrap: wrap;
     }
     main {
-        margin: 0 auto;
+        margin: 0 20px;
     }
 }
 
@@ -252,7 +252,7 @@ main {
         display: none;
     }
     main {
-        margin: 0 auto;
+        margin: 0 20px;
     }
     .card {
         max-width: 300px;

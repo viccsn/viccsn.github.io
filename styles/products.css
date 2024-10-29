@@ -220,7 +220,7 @@ main {
 }
 
 .latest-release .text-latest {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-weight: bold;
 }
 
@@ -231,7 +231,7 @@ main {
         align-items: center; /* Centraliza os cards */
         padding: 20px;
         max-width: 500px; /* Limita a largura máxima */
-        margin: 0 auto;
+        margin: 0 20px;
     }
 }
 
@@ -263,8 +263,7 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 300px; /* Largura máxima do card */
-        max-height: 250px;
+        max-width: 100%; /* Largura máxima do card */
         margin: 10px auto; /* Centraliza o card */
     }
 }
