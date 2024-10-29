@@ -260,7 +260,7 @@ main {
     }
     main {
         flex-direction: column; /* Empilha os cards */
-        margin: 0 20px;
+        margin: 0 auto;
     }
     .card {
         max-width: 100%; /* Largura máxima do card */

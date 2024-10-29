@@ -140,6 +140,10 @@ main {
     .about {
         font-size: 40px;
     }
+
+    main {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -167,6 +171,10 @@ main {
     .social-media {
         position: relative;
         bottom: 0;
+    }
+
+    main {
+        margin: 0 auto;
     }
 }
 
