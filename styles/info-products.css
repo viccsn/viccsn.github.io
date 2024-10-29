@@ -25,7 +25,8 @@ main {
     background-color: white;
     overflow: hidden;
     transition: transform 0.2s ease;
-    max-width: 350px;
+    width: 350px;
+    height: auto;
     margin: 20px auto;
 }
 
@@ -135,7 +136,7 @@ main {
     }
 
     .card {
-        max-width: 90%;
+        max-width: 100%;
         margin: 10px auto;
     }
 
@@ -169,7 +170,7 @@ main {
     }
 
     .card {
-        max-width: 95%;
+        max-width: 100%;
         margin: 10px auto;
     }
 

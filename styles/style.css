@@ -129,7 +129,8 @@ main {
     background-color: white;
     overflow: hidden;
     transition: transform 0.2s ease; 
-    max-width: 350px;
+    width: 350px;
+    height: auto;
     margin: 10px; 
     opacity: 0;
     transform: translateX(-50px);
@@ -262,7 +263,7 @@ main {
         margin: 0 auto;
     }
     .card {
-        max-width: 95%;
+        max-width: 100%;
         margin: 30px auto;
     }
     .welcome h1 {
@@ -288,7 +289,7 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 95%;
+        max-width: 100%;
         margin: 30px auto;
     }
 
