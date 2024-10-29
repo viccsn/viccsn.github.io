@@ -262,7 +262,7 @@ main {
         margin: 0 20px;
     }
     .card {
-        max-width: 100%; /* Largura máxima do card */
+        max-width: 300px; /* Largura máxima do card */
         margin: 10px auto; /* Centraliza o card */
     }
 }
